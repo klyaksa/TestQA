@@ -1,0 +1,9 @@
+Выполняется первоначальное заполнение данными.
+Создаются документы, в том числе счет-фактура (Purchase invoice).
+После создания выполняется проверка заполнения. На проверке счет-фактуры 2 от 22.07.2021 09:38:02 тест падает (не может найти строку - не верно указано количество):
+
+Step (And I go to line in "BasisesTree" table) has not been executed. The line of the tree #2910
+    | 'Currency' | 'Price'  | 'Quantity' | 'Row presentation' | 'Unit' | 'Use' |
+    | 'TRY'      | '350,00' | '7,000'    | 'Shirt (36/Red)'   | 'pcs'  | 'No'  |
+Value <7,000 > from <Quantity > column is not found.
+
